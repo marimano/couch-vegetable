@@ -18,11 +18,11 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({ template: './client/src/index.html' }),
     new MiniCssExtractPlugin({ filename: 'styles-[fullhash].css' }),
-    /*new CopyWebpackPlugin({
+    new CopyWebpackPlugin({
       patterns: [{
         from: 'static', to: 'static'
       }]
-    })*/
+    })
   ],
   module: {
     rules: [{

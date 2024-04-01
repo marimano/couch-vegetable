@@ -1,5 +1,7 @@
 import React from 'react'
 import { NavLink, createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
+import Home from './pages/home/Home';
+import Catalog from './pages/catalog/Catalog';
 
 const SharedLayout = () => {
   return <>
@@ -20,11 +22,11 @@ const router = createBrowserRouter([
     element: <SharedLayout/>,
     children: [{
       index: true,
-      element: 'Головна сторінка'
+      element: <Home />
     },
     {
       path: 'catalog',
-      element: 'Каталог'
+      element: <Catalog/>
     },
     {
       path: 'about',

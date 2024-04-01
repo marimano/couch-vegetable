@@ -1,0 +1,14 @@
+.home {
+  background-image: url('/static/images/main.jpg');
+  min-height: 500px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.home .moto {
+  font-size: 60px;
+  font-style: italic;
+  transform: rotate(-3deg);
+  display: block;
+}
