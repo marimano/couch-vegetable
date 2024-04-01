@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "serve": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "npm-run-all --parallel watch:client watch:server",
+    "watch:client": "webpack --progress --watch",
+    "watch:server": "nodemon server/index.mjs --watch build --watch server"
   },
   "repository": {
     "type": "git",
